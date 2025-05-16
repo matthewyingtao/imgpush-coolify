@@ -1,10 +1,10 @@
 version: '3.5'
 services:
   imgpush:
-    ports:
-        - "5000:5000"
     build: .
     volumes:
       - imgpush-app:/app
       - imgpush-images:/images
       - imgpush-cache:/cache
+    environment:
+      - SERVICE_FQDN_IMGPUSH_5000

@@ -1,7 +1,7 @@
 version: '3.5'
 services:
   imgpush:
-    image: unsend/unsend:latest
+    image: hauxir/imgpush:latest
     expose:
       - 5000
     volumes:

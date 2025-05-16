@@ -8,5 +8,3 @@ services:
       - ./app:/app
       - ./images:/images
       - ./cache:/cache
-    environment:
-      - SERVICE_FQDN_IMGPUSH_5000

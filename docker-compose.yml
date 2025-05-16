@@ -5,6 +5,6 @@ services:
         - "5000:5000"
     build: .
     volumes:
-      - ./app:/app
-      - ./images:/images
-      - ./cache:/cache
+      - imgpush-app:/app
+      - imgpush-images:/images
+      - imgpush-cache:/cache

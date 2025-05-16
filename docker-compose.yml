@@ -4,7 +4,7 @@ services:
     build: .
     volumes:
       - imgpush-app:/app
-      - imgpush-images:/images
-      - imgpush-cache:/cache
+      - imgpush-images:/app/images
+      - imgpush-cache:/app/cache
     environment:
       - SERVICE_FQDN_IMGPUSH_5000

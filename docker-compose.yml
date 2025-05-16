@@ -1,10 +1,12 @@
 version: '3.5'
 services:
   imgpush:
-    build: .
+    image: unsend/unsend:latest
+    expose:
+      - 5000
     volumes:
       - imgpush-app:/app
-      - imgpush-images:/app/images
-      - imgpush-cache:/app/cache
+      - imgpush-images:/images
+      - imgpush-cache:/cache
     environment:
-      - SERVICE_FQDN_IMGPUSH_5000
+      - SERVICE_FQDN_UNSEND_3000
